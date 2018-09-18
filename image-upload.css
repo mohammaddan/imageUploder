@@ -71,7 +71,11 @@
     border-radius: 5px 0 0 5px;
     border: 1px solid #bbbbbb;
     width: calc(100% - 70px);
-    float: left;
+    /* float: left; */
+    position: relative;
+    left: 0;
+    /* display: inline-block; */
+    top:0px;
     border-right: none;
 }
 .file-select + div :nth-child(2) {
@@ -79,7 +83,11 @@
     background-color: teal;
     color:white;
     width: 70px;
-    float: right;
+    /* float: right; */
+    position: relative;
+    /* display: inline-block; */
+    left: calc(100% - 70px);
+    top: -40px;
     border-radius: 0 5px 5px 0;
     border: 1px solid teal;
     border-left: none;
