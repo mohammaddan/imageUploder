@@ -24,6 +24,7 @@ function addPic(f){
     img.src=window.URL.createObjectURL(f.files[0]);
     p=document.createElement("p");
     p1=document.createElement("p");
+    br=document.createElement("br");
     dv_zoom=document.createElement("div");
     dv_del=document.createElement("div");
     dv_zoom.className="btn_zoom";
@@ -36,6 +37,7 @@ function addPic(f){
     p.innerText=f.files[0].name;
     p1.innerText="size : " +Math.round(f.files[0].size/1000)+" KB";
     dv.appendChild(img);
+    dv.appendChild(br);
     dv.appendChild(dv_zoom);
     dv.appendChild(dv_del);
     dv.appendChild(p);

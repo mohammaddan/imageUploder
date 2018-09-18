@@ -14,12 +14,12 @@
 }
 #image_fullscreen{
     /* width: 90%; */
-    height: 100%;
+    height: 90%;
 }
 .img-upload{
     border: dashed gray 1px;
     border-radius: 5px;
-    width: 80%;
+    width: 90%;
     padding: 5px;
     z-index: 1;
 }
@@ -33,13 +33,13 @@
     margin: 10px;
     height: 300px;
     width: 320px;
-    box-shadow: 0px 0px 5px 2px gray;
+    box-shadow: 0 0 5px 2px gray;
     border-radius: 3px;
     vertical-align: bottom;
-    
 }
 .image1{
-    width: 300px;
+    max-width: 300px;
+    max-height: 180px;
 }
 .btn_zoom , .btn_del,#btn-close{
     border: 1px solid #bbbbbb;
@@ -60,38 +60,39 @@
     font-size: 8pt;
     word-wrap: break-word;
     color: gray;
+    text-align: left;
 }
-.file-select + div{
+.file-select{
     border-radius: 5px;
     width:95%;
     height: 50px;
 }
-.file-select + div :first-child{
-    padding: 10px;
-    border-radius: 5px 0 0 5px;
+.dv_choose_file{
+    height: 45px;
+    padding: 8px;
+    box-sizing: border-box;
     border: 1px solid #bbbbbb;
-    width: calc(100% - 70px);
-    /* float: left; */
+    width: calc(95% - 5px);
     position: relative;
     left: 0;
-    /* display: inline-block; */
-    top:0px;
+    top:0;
+    border-radius:5px 0 0 5px;
     border-right: none;
 }
-.file-select + div :nth-child(2) {
-    padding: 10px;
+.btn_browse {
+    height: 45px;
+    box-sizing: border-box;
+    padding:8px;
     background-color: teal;
     color:white;
     width: 70px;
-    /* float: right; */
     position: relative;
-    /* display: inline-block; */
-    left: calc(100% - 70px);
-    top: -40px;
-    border-radius: 0 5px 5px 0;
+    left: calc(95% - 70px);
+    top: -45px;
     border: 1px solid teal;
-    border-left: none;
     cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    border-left: none;
 }
 .file-select + div:focus{
     box-shadow: 0px 0px 2px 2px #44ff99;
