@@ -36,6 +36,13 @@ function addPic(f){
     p1.className="image-info";
     p.innerText=f.files[0].name;
     p1.innerText="size : " +Math.round(f.files[0].size/1000)+" KB";
+
+    let file1 = document.createElement("input");
+    file1.type = "file";
+    file1.files = f.files;
+    file1.name = "file" + Math.random() * 1000 + 1;
+    file1.style.display = "none";
+
     dv.appendChild(img);
     dv.appendChild(br);
     dv.appendChild(dv_zoom);
@@ -43,6 +50,8 @@ function addPic(f){
     dv.appendChild(p);
     dv.appendChild(p1);
     bimg.appendChild(dv);
+    dv.appendChild(file1);
+
     dv_zoom.addEventListener('click',function(){
         image_fullscreen(this);
     });
